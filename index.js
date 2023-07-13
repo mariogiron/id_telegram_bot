@@ -37,6 +37,7 @@ bot.use(async (ctx, next) => {
 bot.command('test', async (ctx) => {
     console.log(ctx.message);
     await ctx.reply(`Hola ${ctx.from.first_name}. ¿Sabes cómo se maneja una Promise?`);
+    await ctx.reply('PRUEBA DE CAMBIO');
     await ctx.replyWithDice();
 });
 
